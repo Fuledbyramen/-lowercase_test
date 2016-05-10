@@ -1,12 +1,46 @@
 
 <div class="jumbotron center">
-	<h1>Welcome to my homepage</h1>
+	<h2>Social Media Marketing</h2>
 	<% if user_signed_in? %>
 	<p>You Logged In!</p>
 
 	<% else %>
-		<%= link_to "Log in", new_user_session_path , class: "btn btn-default" %>
-		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
+		<%= link_to "Log in", new_user_session_path , class: "btn btn-default btn-lg" %>
+		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		
 
 	<% end %>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3 align="center">Basic One Month $10</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="NSX2QN8RLPTKQ">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3 align="center">Basic One Month $20</h3>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+	    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="NSX2QN8RLPTKQ">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+    </div>
+  </div>
 </div>
