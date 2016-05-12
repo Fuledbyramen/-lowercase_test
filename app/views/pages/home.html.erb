@@ -2,7 +2,8 @@
 <div class="jumbotron center">
 	<h2>Social Media Marketing</h2>
 	<% if user_signed_in? %>
-	<p>You Logged In!</p>
+		<p>You Logged In!</p>
+		<%= link_to "Pins", pins_path, class: "btn btn-primary btn-lg" %>
 
 	<% else %>
 		<%= link_to "Log in", new_user_session_path , class: "btn btn-default btn-lg" %>
@@ -44,3 +45,6 @@
     </div>
   </div>
 </div>
+
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/vDAIH5uy4os" frameborder="0" allowfullscreen align="middle"></iframe>
