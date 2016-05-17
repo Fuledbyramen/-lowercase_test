@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-$body-bg: #e5f2ff;
 $navbar-inverse_link_color: #2ecc71;
 $navbar-inverse-bg : white;
 $jumbotron-bg: white;
@@ -15,6 +14,17 @@ $thumbnail-border :#2ecc71;
 $thumbnail-caption-color:#2ecc71;
 $thumbnail-bg :#eff7ff;
 
+body{
+	background-image: url("/background1.jpg");
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    background-repeat:no-repeat;
+	display: compact;
+}
+
+
 @import 'bootstrap';
 
 .center {
@@ -24,3 +34,4 @@ $thumbnail-bg :#eff7ff;
 .navbar-brand {
 	font-weight: bold;
 }
+
