@@ -1,17 +1,31 @@
 
-
-<div class="jumbotron center">
-	<h2>Social Media Marketing</h2>
+  
+<div class="container">
+	
 	<% if user_signed_in? %>
 		<p>You Logged In!</p>
 		<%= link_to "Pins", pins_path, class: "btn btn-primary btn-lg" %>
 
-	<% else %>
-		<%= link_to "Log in", new_user_session_path , class: "btn btn-default btn-lg" %>
-		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-		
 
-	<% end %>
+	<% else %>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Sineko</h1>
+				<h2>Social Media Marketing</h4>
+			</div>
+		</div>
+
+		<div class="row top-buffer">
+	    	<div class="col-md-12 text-center">
+			
+			<%= link_to "Find out more", new_user_registration_path, class: "btn btn-default active" %>
+
+			<%= link_to "Start your three day trial", new_user_session_path , class: "btn btn-primary" %>
+			</div>
+		</div>
+			
+	
 </div>
+	<% end %>
 
 

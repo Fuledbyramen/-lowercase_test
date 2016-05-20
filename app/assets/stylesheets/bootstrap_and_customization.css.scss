@@ -1,29 +1,27 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 $navbar-inverse_link_color: #2ecc71;
-$navbar-inverse-bg : white;
+
 $jumbotron-bg: white;
 $text-color: black;
 $jumbotron-color :#2ecc71;
 $navbar-inverse-link-hover-color :#27ae60;
 $navbar-inverse-brand-hover-bg :#27ae60;
-$btn-primary-bg :#2ecc71;
-$btn-default-bg :#ecf0f1;
 $font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $thumbnail-border :#2ecc71;
 $thumbnail-caption-color:#2ecc71;
 $thumbnail-bg :#eff7ff;
+$headings-color :white;
+$headings-font-weight: bold;
 
-body{
-	background-image: url("/background1.jpg");
-    -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-    background-repeat:no-repeat;
-	display: compact;
+body {
+  background: url("/background3.jpg") center center no-repeat;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 2000px;
+
 }
-
 
 @import 'bootstrap';
 
@@ -35,3 +33,20 @@ body{
 	font-weight: bold;
 }
 
+
+div.container {
+   		position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+		text-align: center;
+}
+
+h1, h2 {
+ color: white; /* text color */
+ -webkit-text-stroke: 1px #000; /* stroke color and weight */
+}
+
+
+.top-buffer { margin-top:20px; }

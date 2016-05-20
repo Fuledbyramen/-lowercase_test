@@ -28,6 +28,7 @@ gem 'devise', '~> 4.1.0'
 gem 'bootstrap-sass'
 gem 'execjs'
 gem 'paperclip', '~> 4.2'
+gem 'aws-sdk', '< 2.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
